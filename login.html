@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <input type="radio" name="panel" id="tab-login" class="tab-input" checked>
+        <input type="radio" name="panel" id="tab-signup" class="tab-input">
+        <input type="radio" name="panel" id="tab-reset" class="tab-input">
+
+        <div class="tabs" role="tablist" aria-label="Authentication forms">
+            <label for="tab-login" role="tab" aria-controls="panel-login" tabindex="0">Sign in</label>
+            <label for="tab-signup" role="tab" aria-controls="panel-signup" tabindex="0">Create account</label>
+            <label for="tab-reset" role="tab" aria-controls="panel-reset" tabindex="0">Forgot password</label>
+        </div>
+
+        <section id="panel-login" class="panel">
+            <header>
+                <h1>Welcome back</h1>
+                <p>Please enter your details to sign in.</p>
+            </header>
+            <form>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="name@example.com" required>
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" placeholder="••••••••" required>
+                </div>
+                <div class="actions">
+                    <label class="remember">
+                        <input type="checkbox" name="remember">
+                        Remember me
+                    </label>
+                    <label for="tab-reset" class="ghost-link">Forgot password?</label>
+                </div>
+                <button type="submit">Sign in</button>
+                <p class="footer">
+                    Don’t have an account?
+                    <label for="tab-signup" class="ghost-link">Create one</label>
+                </p>
+            </form>
+        </section>
+
+        <section id="panel-signup" class="panel">
+            <header>
+                <h1>Create account</h1>
+                <p>Join us by filling in the information below.</p>
+            </header>
+            <form>
+                <div class="field">
+                    <label for="name">Full name</label>
+                    <input id="name" name="name" type="text" placeholder="Jane Doe" required>
+                </div>
+                <div class="field">
+                    <label for="signup-email">Email</label>
+                    <input id="signup-email" name="email" type="email" placeholder="name@example.com" required>
+                </div>
+                <div class="field">
+                    <label for="signup-password">Password</label>
+                    <input id="signup-password" name="password" type="password" placeholder="Create a password" required>
+                </div>
+                <div class="field">
+                    <label for="confirm-password">Confirm password</label>
+                    <input id="confirm-password" name="confirmPassword" type="password" placeholder="Repeat your password" required>
+                </div>
+                <div class="actions">
+                    <label class="remember">
+                        <input type="checkbox" required>
+                        I agree to the terms
+                    </label>
+                    <a href="#" class="ghost-link">Need help?</a>
+                </div>
+                <button type="submit">Create account</button>
+                <p class="footer">
+                    Already have an account?
+                    <label for="tab-login" class="ghost-link">Sign in</label>
+                </p>
+            </form>
+        </section>
+
+        <section id="panel-reset" class="panel">
+            <header>
+                <h1>Reset password</h1>
+                <p>We’ll email you instructions to reset your password.</p>
+            </header>
+            <form>
+                <div class="field">
+                    <label for="reset-email">Email</label>
+                    <input id="reset-email" name="email" type="email" placeholder="name@example.com" required>
+                </div>
+                <button type="submit">Send reset link</button>
+                <p class="footer">
+                    Remembered your password?
+                    <label for="tab-login" class="ghost-link">Back to sign in</label>
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
