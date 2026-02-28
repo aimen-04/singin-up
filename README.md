@@ -13,3 +13,4 @@ A professional and responsive authentication UI component featuring Sign-in, Sig
 - **CSS3:** Advanced flexbox/grid layouts, custom properties (variables), and animations.
 
 ## Preview
+(singin-up/blob/main/Capture%20d'écran%202026-02-28%20081008.png)
