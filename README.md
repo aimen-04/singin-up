@@ -9,8 +9,8 @@ A professional and responsive authentication UI component featuring Sign-in, Sig
 - **Accessibility:** Semantic HTML tags and ARIA labels for better screen reader support.
 
 ## Tech Stack
-- **HTML5:** Structured for accessibility and form validation.
-- **CSS3:** Advanced flexbox/grid layouts, custom properties (variables), and animations.
+- **HTML:** Structured for accessibility and form validation.
+- **CSS:** Advanced flexbox/grid layouts, custom properties (variables), and animations.
 
 ## Preview
 ![Interface Preview](login-preview.png)
